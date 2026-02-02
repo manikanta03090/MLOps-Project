@@ -1,0 +1,20 @@
+# Ignore data files
+data/
+data/*.csv
+.venv/
+venv/
+env/
+
+# Ignore trained models
+models/
+models/*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+.dvc/cache
+.dvc/tmp

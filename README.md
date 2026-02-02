@@ -13,14 +13,16 @@ Ubuntu or any Linux OS
 - Download 'house_prices.csv' file from here [Link Will Update Soon]
 
 🛠️ Steps to Run the Project
+
 1️⃣ Clone the Repository
 git clone https://github.com/manikanta03090/MLOps-Project.git
 
 2️⃣ Navigate to the Project Directory
 cd MLOps-Project
 
-3️⃣ Create Required Directories
+3️⃣ Create Required Directories and move house_prices.csv file into data folder
 mkdir data models
+mv house_prices.csv /data
 
 4️⃣ Create a Python Virtual Environment
 python3 -m venv .venv
@@ -31,7 +33,6 @@ source .venv/bin/activate
 6️⃣ Install Dependencies
 pip install -r requirements.txt
 
-🧠 Train the ML Model
 7️⃣ Run Model Training
 python train.py
 

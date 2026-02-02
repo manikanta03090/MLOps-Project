@@ -38,14 +38,10 @@ python train.py
 
 This will train the model and save the generated model file inside the models/ directory.
 
-🌐 Run the API
 8️⃣ Start the Backend API
 python api.py
 
-
 The API will start and expose endpoints to access the trained model.
-
-🎨 Run the Frontend
 9️⃣ Navigate to the Frontend Folder
 cd frontend
 
@@ -53,7 +49,6 @@ cd frontend
 python3 -m http.server 5500
 
 1️⃣1️⃣ Open the Application in Browser
-
 Open Chrome (or any browser) and go to:
 
 http://localhost:5500

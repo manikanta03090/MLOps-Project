@@ -52,3 +52,35 @@ python3 -m http.server 5500
 Open Chrome (or any browser) and go to:
 
 http://localhost:5500
+
+
+==========================================
+
+How to push csv file into aws s3 remote storage?
+
+1. Create IAM user with admin access and keep credentials handy
+2. create s3 bucket with unique name and create folder called data inside bucket
+3. install aws cli and configure aws with credentials
+4. install dvc in your VM
+
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install dvc dvc_s3
+dvc init
+dvc add data/your_data_sample.csv
+dvc remote add -d s3remote s3://s3_bucket_name/data
+dvc push
+git add .dvc .dvc/config
+git commit -m "Initialize DVC with S3 remote"
+git add data/house_prices.csv.dvc
+git commit -m "Add training data"
+git push origin main
+
+
+
+
+
+ 
+ 
+
+
